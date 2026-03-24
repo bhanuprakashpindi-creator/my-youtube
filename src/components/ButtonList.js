@@ -18,8 +18,8 @@ const ButtonList = () => {
   ];
   return (
     <div className="m-5 p-5 flex gap-5">
-      {buttonList.map((name) => (
-        <Buttons name={name} />
+      {buttonList.map((name, index) => (
+        <Buttons key={index} name={name} />
       ))}
     </div>
   );
