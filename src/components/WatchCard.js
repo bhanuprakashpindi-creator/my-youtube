@@ -1,5 +1,5 @@
 import React from "react";
-import { YOUTUBE_BIG_URL } from "../utils/Constant";
+import CommentsContainer from "./CommentsContainer";
 const WatchCard = ({ idinfo }) => {
   return (
     <div className="col-span-11">
@@ -16,6 +16,7 @@ const WatchCard = ({ idinfo }) => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowFullScreen></iframe>
+        <CommentsContainer />
       </div>
     </div>
   );
